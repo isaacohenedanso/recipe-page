@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+$mobile: 375px;
+$desktop: 1440px;
+$white: hsl(0, 0%, 100%);
+$stone_100: hsl(30, 54%, 90%);
+$stone_150: hsl(30, 18%, 87%);
+$stone_600: hsl(30, 10%, 34%);
+$stone_900: hsl(24, 5%, 18%);
+$brown_800: hsl(14, 45%, 36%);
+$rose_800: hsl(332, 51%, 32%);
+$rose_50: hsl(330, 100%, 98%);
+html {
+  box-sizing: border-box;
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    h1,
+    h2 {
+      font-family: "Young serif", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    p,
+    li,
+    span {
+      font-family: "Outfit", serif;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    padding: 0px;
+    .banner {
+      height: 270px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .hero {
+      width: 90%;
+      margin: 30px auto 0px auto;
+      h1 {
+        font-size: 48px;
+        color: $stone_900;
+      }
+      p {
+        padding-top: 30px;
+        color: $stone_600;
+      }
+    }
+    .preparation {
+      width: 90%;
+      margin: 30px auto 0px auto;
+      padding: 5%;
+      background-color: $stone_100;
+      h2 {
+        color: $rose_800;
+      }
+      ul {
+        color: $stone_600;
+        padding-left: 15px;
+        li {
+          padding: 15px;
+          &::marker {
+            color: $rose_800;
+          }
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .ingredients {
+      width: 90%;
+      margin: 30px auto;
+      h2 {
+        color: $brown_800;
+      }
+      ul {
+        li {
+          padding: 15px;
+          color: $stone_600;
+          list-style-position: inside;
+        }
+      }
+    }
+    hr {
+      width: 90%;
+      margin: 0px auto;
+    }
+    .instructions {
+      width: 90%;
+      margin: 30px auto 0px auto;
+      h2 {
+        color: $brown_800;
+      }
+      ol {
+        li {
+          padding: 15px;
+          color: $stone_600;
+          list-style-position: inside;
+          &::marker {
+            color: $brown_800;
+            font-weight: 700;
+          }
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .nutrition {
+      width: 90%;
+      margin: 30px auto 0px auto;
+      h2 {
+        color: $brown_800;
+      }
+      p {
+        padding: 5px;
+        color: $stone_600;
+      }
+      .table {
+        width: 80%;
+        margin: 5px auto;
+        color: $brown_800;
+        font-family: "outfit", sans-serif;
+        border-collapse: collapse;
+        tr {
+          td {
+            text-align: start;
+            border-bottom: 1px solid $stone_150;
+            width: 50%;
+            padding: 15px 0px;
+            &.parameter {
+              color: $stone_600;
+              padding-left: 15%;
+            }
+            &.value {
+              padding-left: 15%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: $mobile) {
+  .banner {
+    width: 95vw;
+    margin: 2vw auto;
+    height: 400px !important;
+    img {
+      border-radius: 15px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+html {
+  box-sizing: border-box; }
+  html *,
+  html *::after,
+  html *::before {
+    box-sizing: inherit; }
+  html * {
+    margin: 0px;
+    padding: 0px; }
+  html body {
+    padding: 0px; }
+    html body h1,
+    html body h2 {
+      font-family: "Young serif", serif;
+      font-weight: 400;
+      font-style: normal; }
+    html body p,
+    html body li,
+    html body span {
+      font-family: "Outfit", serif;
+      font-weight: 400;
+      font-size: 16px; }
+    html body .banner {
+      height: 270px; }
+      html body .banner img {
+        width: 100%;
+        height: inherit; }
+    html body .hero {
+      width: 90%;
+      margin: 30px auto 0px auto; }
+      html body .hero h1 {
+        font-size: 48px;
+        color: #302d2c; }
+      html body .hero p {
+        padding-top: 30px;
+        color: #5f574e; }
+    html body .preparation {
+      width: 90%;
+      margin: 30px auto 0px auto;
+      padding: 5%;
+      background-color: #f3e6d8; }
+      html body .preparation h2 {
+        color: #7b284f; }
+      html body .preparation ul {
+        color: #5f574e;
+        padding-left: 15px; }
+        html body .preparation ul li {
+          padding: 15px; }
+          html body .preparation ul li::marker {
+            color: #7b284f; }
+          html body .preparation ul li span {
+            font-weight: 700; }
+    html body .ingredients {
+      width: 90%;
+      margin: 30px auto; }
+      html body .ingredients h2 {
+        color: #854632; }
+      html body .ingredients ul li {
+        padding: 15px;
+        color: #5f574e;
+        list-style-position: inside; }
+    html body hr {
+      width: 90%;
+      margin: 0px auto; }
+    html body .instructions {
+      width: 90%;
+      margin: 30px auto 0px auto; }
+      html body .instructions h2 {
+        color: #854632; }
+      html body .instructions ol li {
+        padding: 15px;
+        color: #5f574e;
+        list-style-position: inside; }
+        html body .instructions ol li::marker {
+          color: #854632;
+          font-weight: 700; }
+        html body .instructions ol li span {
+          font-weight: 700; }
+    html body .nutrition {
+      width: 90%;
+      margin: 30px auto 0px auto; }
+      html body .nutrition h2 {
+        color: #854632; }
+      html body .nutrition p {
+        padding: 5px;
+        color: #5f574e; }
+      html body .nutrition .table {
+        width: 80%;
+        margin: 5px auto;
+        color: #854632;
+        font-family: "outfit", sans-serif;
+        border-collapse: collapse; }
+        html body .nutrition .table tr td {
+          text-align: start;
+          border-bottom: 1px solid #e4ded8;
+          width: 50%;
+          padding: 15px 0px; }
+          html body .nutrition .table tr td.parameter {
+            color: #5f574e;
+            padding-left: 15%; }
+          html body .nutrition .table tr td.value {
+            padding-left: 15%; }
+
+@media (min-width: 375px) {
+  .banner {
+    width: 95vw;
+    margin: 2vw auto;
+    height: 400px !important; }
+    .banner img {
+      border-radius: 15px; } }
